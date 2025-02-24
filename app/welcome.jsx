@@ -24,15 +24,22 @@ const welcome = () => {
           </Text>
         </View>
         <View style={styles.footer}>
-          <Button title="hello" onPress={() => router.push("Login")} />
+          <Button
+            title="Getting Started"
+            buttonStyle={{ marginHorizontal: wp(3) }}
+            onPress={() => {
+              console.log("🚀 Button in welcome.jsx pressed! Navigating...");
+              router.push("/signUp");
+            }}
+          />
           <CustomButon
             title="Getting Started"
             buttonStyle={{ marginHorizontal: wp(3) }}
-            onPress={() => router.push("SignUp")}
+            onPress={() => router.push("/signUp")}
           />
           <View style={styles.bottomTextContainer}>
             <Text style={styles.loginText}>Already have an account?</Text>
-            <Pressable onPress={() => router.push("Login")}>
+            <Pressable onPress={() => router.push("/login")}>
               <Text
                 style={[
                   styles.loginText,

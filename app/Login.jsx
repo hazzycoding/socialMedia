@@ -9,7 +9,7 @@ import { hp, wp } from "../helpers/common";
 import TextInput from "../components/TextInput";
 import CustomButon from "../components/CustomButton";
 import BackButton from "../components/BackButton";
-const Login = () => {
+const login = () => {
   const router = useRouter();
   const emailRef = useRef("");
   const passwordRef = useRef("");
@@ -68,7 +68,7 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default login;
 
 const styles = StyleSheet.create({
   container: {
